@@ -16,3 +16,5 @@ Para clonar el repositorio
 3. Correr el programa
 
 `python3 frecuencias.py`
+
+### CONTENEDOR
