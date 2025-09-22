@@ -4,12 +4,17 @@
 ```
 git clone https://github.com/jfmaggio/pipelines_escalables.git
 ```
-2. Activar Virtual Enviroment
+2. Ir al directorio
+```
+cd ~/pipelines_escalables/tps/tp1/
+```
+
+3. Activar Virtual Enviroment
 ```
 source .mi_entorno/bin/activate
 ```
 
-3. Instalar los requisitos que se necesitan para correr el programa
+4. Instalar los requisitos que se necesitan para correr el programa
 
 ```
 pip install -r requirements.txt
@@ -17,19 +22,20 @@ pip install -r requirements.txt
 
 ### Detalle para correr el programa
 
-1. En primer lugar es necesario activar el Virtual Enviroment de python
+1. Ir al directorio
+```
+cd ~/pipelines_escalables/tps/tp1/
+```
+2. En primer lugar es necesario activar el Virtual Enviroment de python
 
 ```
 source .mi_entorno/bin/activate
 ```
 
-2. Correr el programa
+3. Correr el programa
 
 ```
 python3 frecuencias.py
 ```
 
 ### CONTENEDOR
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
