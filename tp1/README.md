@@ -38,4 +38,21 @@ source .mi_entorno/bin/activate
 python3 frecuencias.py
 ```
 
-### CONTENEDOR
+### Puesta en marcha de contenedor
+1. En el directorio donde se encuentre el Dockerfile (Dockerfile.ubuntu). Tener en cuenta que cada vez que se modifiue el dockerfile debe guardarse y volver a construir el contenedor
+
+```
+docker build . -t frecuencias -f Dockerfile.ubuntu
+```
+
+2. Comprobación de que el contenedor se creo correctamente
+
+```
+docker image ls
+```
+
+3. Correr el contenedor
+
+```
+docker run --rm --name corriendo-frecuencias prueba
+```
