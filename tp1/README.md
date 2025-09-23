@@ -54,5 +54,5 @@ docker image ls
 3. Correr el contenedor
 
 ```
-docker run --rm --name corriendo-frecuencias prueba
+docker run --rm --name corriendo-frecuencias frecuencias
 ```
