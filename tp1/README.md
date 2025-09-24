@@ -1,3 +1,6 @@
+## El programa frecuencias.py es basicamente un contador de los nucleotidos de un archivo fasta, se le ingresa un archivo fasta y cuenta cuantos nucleotidos hay de cada tipo. 
+---
+
 ### Detalle para descargar (clonar repositorio) programa
 1. Para clonar el repositorio.
 
@@ -19,6 +22,7 @@ source .mi_entorno/bin/activate
 ```
 pip install -r requirements.txt
 ```
+---
 
 ### Detalle para correr el programa
 
@@ -38,6 +42,7 @@ source .mi_entorno/bin/activate
 python3 frecuencias.py
 ```
 
+---
 ### Puesta en marcha de contenedor
 1. En el directorio donde se encuentre el Dockerfile (Dockerfile.ubuntu). Tener en cuenta que cada vez que se modifiue el dockerfile debe guardarse y volver a construir el contenedor.
 
