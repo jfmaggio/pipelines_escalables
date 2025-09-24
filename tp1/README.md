@@ -61,3 +61,14 @@ docker image ls
 ```
 docker run --rm --name corriendo-frecuencias -v ~/pipelines_escalables/tps/tp1/data:/data frecuencias
 ```
+
+4. Desde Docker desktop, ir a Contaiers y a la pestaña Exec y ejecutar.
+ 
+```
+python3 /data/frecuencias.py
+```
+5. El archivo a analizar debe estar en el direcorio local compartido con el contenedor como se vio en el `punto 3` con la ruta `/data/fasta_a_analizar.fa`. Tambien se puese correr el test usando `/data/fasta_test.fa`.
+
+```
+/data/fasta_test.fa
+```
