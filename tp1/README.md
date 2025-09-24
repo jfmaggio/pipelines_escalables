@@ -56,10 +56,12 @@ docker build . -t frecuencias -f Dockerfile.ubuntu
 docker image ls
 ```
 
-3. Correr el contenedor con el sistema de archivos montado, `~/pipelines_escalables/tps/tp1/data` es el directorio local y `/data` dentro del contenedor.
+3. Correr el contenedor con el sistema de archivos montado, `/ruta_a/pipelines_escalables/tps/tp1/data` es directorio local donde se clonó el repositorio y `/data` dentro del contenedor. 
+
+CUIDADO, editar la ruta al directorio propio.
 
 ```
-docker run --rm --name corriendo-frecuencias -v ~/pipelines_escalables/tps/tp1/data:/data frecuencias
+docker run --rm --name corriendo-frecuencias -v /ruta_a/pipelines_escalables/tps/tp1/data:/data frecuencias
 ```
 
 4. Desde Docker desktop, ir a Contaiers y a la pestaña Exec y ejecutar.
@@ -67,7 +69,9 @@ docker run --rm --name corriendo-frecuencias -v ~/pipelines_escalables/tps/tp1/d
 ```
 python3 /data/frecuencias.py
 ```
-5. El archivo a analizar debe estar en el direcorio local compartido con el contenedor como se vio en el `punto 3` con la ruta `/data/fasta_a_analizar.fa`. Tambien se puese correr el test usando `/data/fasta_test.fa`.
+5. El archivo a analizar debe estar en el direcorio local compartido con el contenedor como se vio en el `punto 3` con la ruta `/ruta_a/pipelines_escalables/tps/tp1/data/fasta_a_analizar.fa`. Tambien se puese correr el test usando `/data/fasta_test.fa`.
+
+CUIDADO, editar la ruta al directorio propio.
 
 ```
 /data/fasta_test.fa
