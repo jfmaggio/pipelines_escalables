@@ -1,4 +1,4 @@
-## El programa frecuencias.py es basicamente un contador de los nucleotidos de un archivo fasta, se le ingresa un archivo fasta y cuenta cuantos nucleotidos hay de cada tipo. 
+## El programa frecuencias.py es basicamente un contador de los nucleotidos de un archivo fasta, se le ingresa un archivo fasta y cuenta cuantos nucleótidos hay de cada tipo. 
 ---
 
 ### Detalle para descargar (clonar repositorio) programa
