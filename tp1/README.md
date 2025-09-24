@@ -32,7 +32,7 @@ cd ~/pipelines_escalables/tps/tp1/
 source .mi_entorno/bin/activate
 ```
 
-3. Correr el programa.
+3. Correr el programa. La prueba del mismo se puede hacer con el archivo `fasta_test.fa`.
 
 ```
 python3 frecuencias.py
