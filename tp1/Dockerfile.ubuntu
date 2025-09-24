@@ -26,6 +26,7 @@ RUN python3 -m venv /app/.venv && \
     &&  /app/.venv/bin/pip install --no-cache-dir -r requirements.txt
 # Se copia el script a correr
 COPY frecuencias.py .
+COPY fasta_test.fasta .
 # Exporta VIRTUAL_ENV y PATH, es como hacer el source
 ENV VIRTUAL_ENV=/app/.venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
