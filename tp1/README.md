@@ -59,5 +59,5 @@ docker image ls
 3. Correr el contenedor con el sistema de archivos montado, `~/pipelines_escalables/tps/tp1/data` es el directorio local y `/data` dentro del contenedor.
 
 ```
-docker run --rm --name corriendo-frecuencias -v tp1/data:/data frecuencias
+docker run --rm --name corriendo-frecuencias -v ~/pipelines_escalables/tps/tp1/data:/data frecuencias
 ```
