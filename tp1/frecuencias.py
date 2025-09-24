@@ -1,4 +1,10 @@
-sec = input("Introduce una secuencia de ADN o ARN: ")
+fasta_file = input("Introduce el nombre del archivo FASTA: ")
+
+with open(fasta_file, "r") as f:
+    sec = ""
+    for line in f:
+        if not line.startswith(">"):
+            sec += line.strip()
 sec = sec.upper()    
 a = 0
 t = 0
