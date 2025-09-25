@@ -2,13 +2,7 @@ Directorios de Nextflow
 .nextflow/
 work/
 results/
-
-Archivos de Nextflow generados
-timeline.html
-trace.txt
-report.html
-.nextflow.log
-.nextflow.log.history
+data/frecuencias.txt
 
 Archivos de configuración locales o sensibles
-.nextflow.config
+nextflow.config
