@@ -1,4 +1,14 @@
+Directorios de Nextflow
 .nextflow/
 work/
-*.log*
-.results/
+results/
+
+Archivos de Nextflow generados
+timeline.html
+trace.txt
+report.html
+.nextflow.log
+.nextflow.log.history
+
+Archivos de configuración locales o sensibles
+.nextflow.config
