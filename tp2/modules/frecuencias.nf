@@ -9,7 +9,7 @@ process frecuencias_process {
     path 'data/frecuencias2.py' 
   output:
     path 'frecuencias.txt'
-    publishDir 'data', mode: 'copy' // Guarda el archivo de salida en el directorio 'data'
+    publishDir 'results', mode: 'copy' // Guarda el archivo de salida en el directorio 'data'
 
   """
   python3 data/frecuencias2.py $file > frecuencias.txt

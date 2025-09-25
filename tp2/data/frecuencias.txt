@@ -1,1 +1,0 @@
-Las frecuencias de los nucleotidos en la secuencia son A: 9540 T: 9940 G: 10927 C: 10704 U: 0
