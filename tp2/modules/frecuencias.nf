@@ -8,11 +8,11 @@ process frecuencias_process {
     path file // Define la entrada, que será una ruta de archivo
     path 'data/frecuencias2.py' 
   output:
-    path 'frecuencias.txt'
+    path "${file.baseName}_frec.txt" // Define la salida, que será un archivo con el sufijo '_frec.txt'
     publishDir 'results', mode: 'copy' // Guarda el archivo de salida en el directorio 'data'
 //script, primero crea carpeta results si no exste y despues corre el script python
   """
   mkdir -p results
-  python3 data/frecuencias2.py $file > frecuencias.txt
+  python3 data/frecuencias2.py $file > ${file.baseName}_frec.txt
   """
 }
