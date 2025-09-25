@@ -3,6 +3,4 @@ Directorios de Nextflow
 work/
 results/
 data/frecuencias.txt
-
-Archivos de configuración locales o sensibles
-nextflow.config
+**.log*
