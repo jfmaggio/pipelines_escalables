@@ -10,8 +10,9 @@ process frecuencias_process {
   output:
     path 'frecuencias.txt'
     publishDir 'results', mode: 'copy' // Guarda el archivo de salida en el directorio 'data'
-
+//script, primero crea carpeta results si no exste y despues corre el script python
   """
+  mkdir -p results
   python3 data/frecuencias2.py $file > frecuencias.txt
   """
 }
