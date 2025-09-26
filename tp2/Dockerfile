@@ -19,7 +19,7 @@ WORKDIR /app
 
 # Aca va a ir el codigo a correr
 
-COPY requirements.txt .
+COPY data/requirements.txt .
 # Corro un comando para que instale paquetes cuando cree la imagen
 RUN python3 -m venv /app/.venv && \
     /app/.venv/bin/python -m pip install --upgrade pip\
