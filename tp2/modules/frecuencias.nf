@@ -9,10 +9,10 @@ process frecuencias_process {
     path python_script 
   output:
     path "${fasta.baseName}_frec.txt" // Define la salida, que será un archivo con el sufijo '_frec.txt'
-    publishDir 'results', mode: 'copy' // Guarda el archivo de salida en el directorio 'data'
-//script, primero crea carpeta results si no exste y despues corre el script python
+    publishDir "${params.outdir}" // Guarda el archivo de salida en el directorio 'data'
+//script, primero crea carpeta con el nombre que le des como --outdir si no exste y despues corre el script python
   """
-  mkdir -p results
+  mkdir -p $params.outdir
   python3 $python_script $fasta > ${fasta.baseName}_frec.txt
   """
 }
